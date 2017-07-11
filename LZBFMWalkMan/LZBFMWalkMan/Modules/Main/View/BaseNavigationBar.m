@@ -9,13 +9,28 @@
 #import "BaseNavigationBar.h"
 
 @implementation BaseNavigationBar
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
++ (void)setGlobalBackGroundImage:(UIImage *)backGroundImage
+{
+    if(backGroundImage == nil) return;
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"BaseNC"), nil];
+    [navBar setBackgroundImage:backGroundImage forBarMetrics:UIBarMetricsDefault];
 }
-*/
+
++ (void)setGlobalTextColor:(UIColor *)globalTextColor
+{
+    if(globalTextColor == nil) return;
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"BaseNC"), nil];
+    [navBar setTitleTextAttributes:@{NSForegroundColorAttributeName : globalTextColor}];
+}
+
++ (void)setGlobalTextFont:(UIFont *)globalTextFont
+{
+    if(globalTextFont == nil)
+    {
+        globalTextFont = [UIFont systemFontOfSize:16.0];
+    }
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:NSClassFromString(@"BaseNC"), nil];
+    [navBar setTitleTextAttributes:@{NSFontAttributeName : globalTextFont}];
+}
 
 @end
