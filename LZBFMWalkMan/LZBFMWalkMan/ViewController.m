@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LZBMiddleView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    LZBMiddleView *middleView1 = [LZBMiddleView shareInstance];
+    LZBMiddleView *middleView2 = [LZBMiddleView middleView];
+    NSLog(@"=----%p------%p",middleView1,middleView2);
 }
 
 
