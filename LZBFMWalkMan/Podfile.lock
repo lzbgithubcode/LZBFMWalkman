@@ -1,3 +1,14 @@
-PODFILE CHECKSUM: 121eb015a93acb5bb2be9c129ae6acff2177b48d
+PODS:
+  - LZBCommonElement (0.1.1):
+    - LZBCommonElement/Categrory (= 0.1.1)
+  - LZBCommonElement/Categrory (0.1.1)
+
+DEPENDENCIES:
+  - LZBCommonElement
+
+SPEC CHECKSUMS:
+  LZBCommonElement: f78c5c6419cc37438254e0ae7d37b338887d2d53
+
+PODFILE CHECKSUM: b8b7312d7ed170c378b047fe39ea6a5dc4e27fcf
 
 COCOAPODS: 1.2.1
