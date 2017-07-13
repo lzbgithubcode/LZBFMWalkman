@@ -38,7 +38,7 @@ static LZBMiddleView *_instance;
 {
   if(_instance == nil)
   {
-     _instance = [[[NSBundle mainBundle] loadNibNamed:@"LZBMiddleView" owner:nil options:nil] firstObject];
+      _instance = [LZBMiddleView middleView];
   }
     return _instance;
 }
@@ -48,7 +48,8 @@ static LZBMiddleView *_instance;
  */
 + (LZBMiddleView *)middleView
 {
-    return [LZBMiddleView shareInstance];
+    _instance = [[[NSBundle mainBundle] loadNibNamed:@"LZBMiddleView" owner:nil options:nil] firstObject];
+    return _instance;
 }
 
 - (void)setIsPlaying:(BOOL)isPlaying
@@ -80,7 +81,7 @@ static LZBMiddleView *_instance;
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    self.middleImgView.layer.masksToBounds = YES;
+    
     self.middleImg = self.middleImgView.image;
     [self.playButton addTarget:self action:@selector(playButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     //移除动画
@@ -98,6 +99,7 @@ static LZBMiddleView *_instance;
 {
     [super layoutSubviews];
     self.middleImgView.layer.cornerRadius = self.middleImgView.frame.size.width * 0.5;
+    self.middleImgView.layer.masksToBounds = YES;
 }
 
 - (void)playButtonClick:(UIButton *)playButton

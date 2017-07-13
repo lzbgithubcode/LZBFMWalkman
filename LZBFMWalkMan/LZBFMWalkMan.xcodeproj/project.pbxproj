@@ -52,6 +52,8 @@
 		C89049481F1521D800680074 /* BaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C89049471F1521D800680074 /* BaseNavigationBar.m */; };
 		C890494B1F1521EB00680074 /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C890494A1F1521EB00680074 /* BaseTabBar.m */; };
 		C890494E1F15220000680074 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C890494D1F15220000680074 /* BaseModel.m */; };
+		C8EC20BD1F17BF6300E42204 /* LZBTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EC20BC1F17BF6300E42204 /* LZBTestVC.m */; };
+		C8EC20C01F17BF8100E42204 /* LZBTestVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EC20BF1F17BF8100E42204 /* LZBTestVC1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,10 @@
 		C890494A1F1521EB00680074 /* BaseTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
 		C890494C1F15220000680074 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		C890494D1F15220000680074 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		C8EC20BB1F17BF6300E42204 /* LZBTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBTestVC.h; sourceTree = "<group>"; };
+		C8EC20BC1F17BF6300E42204 /* LZBTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBTestVC.m; sourceTree = "<group>"; };
+		C8EC20BE1F17BF8100E42204 /* LZBTestVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBTestVC1.h; sourceTree = "<group>"; };
+		C8EC20BF1F17BF8100E42204 /* LZBTestVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBTestVC1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				C890493C1F15217300680074 /* Main */,
+				C8EC20BB1F17BF6300E42204 /* LZBTestVC.h */,
+				C8EC20BC1F17BF6300E42204 /* LZBTestVC.m */,
+				C8EC20BE1F17BF8100E42204 /* LZBTestVC1.h */,
+				C8EC20BF1F17BF8100E42204 /* LZBTestVC1.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -431,7 +441,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8EC20C01F17BF8100E42204 /* LZBTestVC1.m in Sources */,
 				C89049291F151ED000680074 /* ViewController.m in Sources */,
+				C8EC20BD1F17BF6300E42204 /* LZBTestVC.m in Sources */,
 				C89049451F1521AC00680074 /* BaseTC.m in Sources */,
 				C890494E1F15220000680074 /* BaseModel.m in Sources */,
 				C88A77381F16606E00EA6AB8 /* LZBMiddleView.m in Sources */,
