@@ -23,12 +23,8 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    
-    NSLog(@"摸到我了");
+    NSLog(@"点击我了");
     [self.navigationController pushViewController:[LZBTestVC1 new] animated:YES];
-    
-    
-    
 }
 
 @end

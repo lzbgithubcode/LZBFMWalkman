@@ -91,6 +91,9 @@ static LZBMiddleView *_instance;
      //暂停动画
     [self.middleImgView.layer pauseAnimate];
     
+    self.layer.cornerRadius = self.frame.size.width * 0.5;
+    self.layer.masksToBounds = YES;
+    
     //增加通知监听状态
     
 }
