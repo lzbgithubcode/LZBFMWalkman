@@ -48,7 +48,8 @@ static LZBMiddleView *_instance;
  */
 + (LZBMiddleView *)middleView
 {
-    _instance = [[[NSBundle mainBundle] loadNibNamed:@"LZBMiddleView" owner:nil options:nil] firstObject];
+    NSBundle *bundle = [NSBundle bundleForClass:self];
+    _instance = [[bundle loadNibNamed:@"LZBMiddleView" owner:nil options:nil] firstObject];
     return _instance;
 }
 

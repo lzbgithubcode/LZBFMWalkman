@@ -8,7 +8,7 @@
 
 #import "BaseTabBar.h"
 #import "LZBMiddleView.h"
-#import <UIView+LayoutFrame.h>
+#import "UIView+LayoutFrame.h"
 
 @interface BaseTabBar()
 
@@ -32,7 +32,10 @@
     self.barStyle = UIBarStyleBlack;
     
     // 设置tabbar 背景图片
-    self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [bundle pathForResource:@"tabbar_bg@2x.png" ofType:nil inDirectory:@"LZBFMMain.bundle/"];
+    self.backgroundImage = [UIImage imageWithContentsOfFile:path];
+   // self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
     
     
     // 添加一个按钮, 准备放在中间

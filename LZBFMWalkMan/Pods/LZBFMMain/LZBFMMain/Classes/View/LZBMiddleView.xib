@@ -15,21 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_np_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-1a-DG4">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LZBFMMain.bundle/tabbar_np_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-1a-DG4">
                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_np_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="uc4-Le-04C">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LZBFMMain.bundle/tabbar_np_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="uc4-Le-04C">
                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_np_playshadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-fa-R5L">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LZBFMMain.bundle/tabbar_np_playshadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-fa-R5L">
                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zxy_icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bqS-on-10s">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LZBFMMain.bundle/zxy_icon@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="bqS-on-10s">
                     <rect key="frame" x="11" y="11" width="43" height="43"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMe-X1-MDA">
                     <rect key="frame" x="10" y="10" width="45" height="45"/>
-                    <state key="normal" image="tabbar_np_play.png"/>
+                    <state key="normal" image="LZBFMMainElement.bundle/tabbar_np_play.png"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,10 +66,10 @@
         </view>
     </objects>
     <resources>
-        <image name="tabbar_np_normal.png" width="65" height="65"/>
-        <image name="tabbar_np_play.png" width="50" height="50"/>
-        <image name="tabbar_np_playshadow.png" width="50" height="50"/>
-        <image name="tabbar_np_shadow.png" width="75" height="65"/>
-        <image name="zxy_icon.jpg" width="48" height="48"/>
+        <image name="LZBFMMain.bundle/tabbar_np_normal.png" width="16" height="16"/>
+        <image name="LZBFMMain.bundle/tabbar_np_playshadow.png" width="16" height="16"/>
+        <image name="LZBFMMain.bundle/tabbar_np_shadow.png" width="16" height="16"/>
+        <image name="LZBFMMain.bundle/zxy_icon@2x.png" width="16" height="16"/>
+        <image name="LZBFMMainElement.bundle/tabbar_np_play.png" width="16" height="16"/>
     </resources>
 </document>

@@ -1,0 +1,6 @@
+framework module LZBFMMain {
+  umbrella header "LZBFMMain-umbrella.h"
+
+  export *
+  module * { export * }
+}

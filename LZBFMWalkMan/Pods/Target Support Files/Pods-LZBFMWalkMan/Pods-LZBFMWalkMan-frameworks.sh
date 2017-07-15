@@ -87,6 +87,15 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/LZBCommonElement/LZBCommonElement.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LZBFMMain/LZBFMMain.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/LZBCommonElement/LZBCommonElement.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LZBFMMain/LZBFMMain.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
