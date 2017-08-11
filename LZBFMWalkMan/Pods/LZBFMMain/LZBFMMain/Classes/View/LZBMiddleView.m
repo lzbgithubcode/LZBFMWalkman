@@ -64,7 +64,10 @@ static LZBMiddleView *_instance;
     }
     else
     {
-        UIImage *image = [UIImage imageNamed:@"tabbar_np_play"];
+        // 设置tabbar 背景图片
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *path = [bundle pathForResource:@"tabbar_np_play@2x.png" ofType:nil inDirectory:@"LZBFMMain.bundle/"];
+        UIImage *image = [UIImage imageWithContentsOfFile:path];
         [self.playButton setImage:image forState:UIControlStateNormal];
         [self.middleImgView.layer pauseAnimate];
     }
@@ -74,6 +77,8 @@ static LZBMiddleView *_instance;
     _middleImg =middleImg;
     self.middleImgView.image = middleImg;
 }
+
+
 
 
 
@@ -108,9 +113,17 @@ static LZBMiddleView *_instance;
 
 - (void)playButtonClick:(UIButton *)playButton
 {
+    //1.按钮状态改变
+    playButton.selected = !playButton.isSelected;
+    
+    //2.改变播状态
+    self.isPlaying = playButton.selected;
+    
+    //3.传递状态
     if(self.callBackMiddleClickBlock)
         self.callBackMiddleClickBlock(self.isPlaying);
 }
+
 
 
 - (void)addRotationAnimationWithView:(UIView *)animaitonView

@@ -35,4 +35,5 @@
  点击中间按钮的回调执行代码块
  */
 @property (nonatomic, copy) void(^callBackMiddleClickBlock)(BOOL isPlaying);
+- (void)setCallBackMiddleClickBlock:(void (^)(BOOL isPlaying))callBackMiddleClickBlock;
 @end

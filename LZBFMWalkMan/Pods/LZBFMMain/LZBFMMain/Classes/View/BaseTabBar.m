@@ -35,7 +35,6 @@
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSString *path = [bundle pathForResource:@"tabbar_bg@2x.png" ofType:nil inDirectory:@"LZBFMMain.bundle/"];
     self.backgroundImage = [UIImage imageWithContentsOfFile:path];
-   // self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
     
     
     // 添加一个按钮, 准备放在中间
@@ -101,6 +100,11 @@
   {
       _middleView = [LZBMiddleView middleView];
       [self addSubview:_middleView];
+      __weak typeof(self)  weakSelf = self;
+     [_middleView setCallBackMiddleClickBlock:^(BOOL isPlaying){
+         if(weakSelf.callBackMiddleClickBlock)
+             weakSelf.callBackMiddleClickBlock(isPlaying);
+     }];
   }
     return _middleView;
 }

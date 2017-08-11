@@ -1,6 +1,6 @@
 PODS:
   - LZBCommonElement/Categrory (0.1.1)
-  - LZBFMMain (0.1.1):
+  - LZBFMMain (0.1.2):
     - LZBCommonElement/Categrory
 
 DEPENDENCIES:
@@ -8,7 +8,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   LZBCommonElement: f78c5c6419cc37438254e0ae7d37b338887d2d53
-  LZBFMMain: fba78f43ef899d4e680465431633cfea51e4d5ca
+  LZBFMMain: 96f3c534a31b5418311208ae54214c6142757cb6
 
 PODFILE CHECKSUM: 8e8dd1f82f433427bee35a74a6ccf76f480fc25e
 
