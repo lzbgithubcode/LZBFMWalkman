@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+    [NSThread sleepForTimeInterval:2.0];
     BaseTC *rootVC = [BaseTC tabBarControllerWithAddChildVCsBlock:^(BaseTC *tabBarC) {
         [tabBarC addChildVC:[LZBTestVC new] normalImageName:@"tabbar_find_n" selectedImageName:@"tabbar_find_h" isRequiredNavController:YES];
         [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_sound_n" selectedImageName:@"tabbar_sound_h" isRequiredNavController:YES];
